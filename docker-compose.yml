@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-    db:
+    postgres:
         image: postgres
         restart: "always"
         env_file:
@@ -18,7 +18,7 @@ services:
         ports:
             - 3000:3000
         depends_on:
-            - db
+            - postgres
         networks:
             - simple-network
         volumes:
@@ -28,8 +28,15 @@ services:
     app:
         build:
             context: .
-        depends_on:
-            - db
+        networks:
+            - simple-network
+    mongo:
+        image: mongo
+        restart: "always"
+        ports:
+            - 27017:27017
+        env_file:
+            - metabase/config/mongo_exemple.env
         networks:
             - simple-network
 networks:
