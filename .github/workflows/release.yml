@@ -14,7 +14,7 @@ jobs:
             contents: write
         steps:
             - name: Publish PyPi package
-              uses: code-specialist/pypi-poetry-publish@v1
+              uses: coveooss/pypi-publish-with-poetry@v1.0.0
               with:
-                  ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  project-name: Trabalho de GCES
                   PUBLISH_REGISTRY_PASSWORD: ${{ secrets.PYPITOKEN }}
