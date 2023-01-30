@@ -13,8 +13,7 @@ jobs:
         permissions:
             contents: write
         steps:
-            - name: Publish PyPi package
-              uses: coveooss/pypi-publish-with-poetry@v1.0.0
+            - name: Publish python poetry package
+              uses: JRubics/poetry-publish@v1.16
               with:
-                  project-name: Trabalho de GCES
-                  PUBLISH_REGISTRY_PASSWORD: ${{ secrets.PYPITOKEN }}
+                  pypi_token: ${{ secrets.PYPITOKEN }}
