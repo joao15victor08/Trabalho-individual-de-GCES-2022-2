@@ -8,20 +8,13 @@ permissions:
     contents: write
 
 jobs:
-    publish:
+    publish-service-client-package:
         runs-on: ubuntu-latest
+        permissions:
+            contents: write
         steps:
-            - uses: actions/checkout@v3
-            - uses: actions/setup-python@v4
+            - name: Publish PyPi package
+              uses: code-specialist/pypi-poetry-publish@v1
               with:
-                  python-version: 3.8
-            - name: Run image
-              uses: abatilo/actions-poetry@v2.1.6
-              with:
-                  poetry-version: 1.3.2
-            - name: Publish
-              env:
-                  PYPI_TOKEN: ${{ secrets.PYPITOKEN }}
-              run: |
-                  poetry config pypi-token.pypi $PYPITOKEN
-                  poetry publish --build
+                  ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  PUBLISH_REGISTRY_PASSWORD: ${{ secrets.PYPITOKEN }}
