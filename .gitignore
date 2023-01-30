@@ -1,9 +1,0 @@
-env/
-**/__pycache__/
-.coverage
-.vscode/
-dist/
-*.lock
-_build/
-_static/
-_templates/

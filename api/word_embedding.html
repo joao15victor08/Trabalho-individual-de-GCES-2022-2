@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Embedding &mdash; trabalho_individual_de_gces_2022_2  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Parser Base" href="parser_base.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> trabalho_individual_de_gces_2022_2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentação Trabalho individual GCES 2022- 2</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Funcs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="YAML_parser.html">YAML Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concatenate_columns.html">Concatenate Columns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="const.html">Const</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feature_engineering_parser.html">Feature Engineering Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="key_smash.html">Key Smash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">Main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_parser.html">Model Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parser_base.html">Parser Base</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Word Embedding</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#src"><code class="docutils literal notranslate"><span class="pre">src</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#src.data_pipeline"><code class="docutils literal notranslate"><span class="pre">src.data_pipeline</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">trabalho_individual_de_gces_2022_2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Funcs</a></li>
+      <li class="breadcrumb-item active">Word Embedding</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/word_embedding.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="word-embedding">
+<span id="api-word-embedding"></span><h1>Word Embedding<a class="headerlink" href="#word-embedding" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="src">
+<span class="target" id="namespacesrc"></span><em class="property"><span class="pre">module</span> </em><span class="sig-name descname"><span class="pre">src</span></span><a class="headerlink" href="#src" title="Permalink to this definition"></a></dt>
+<dd><dl class="py class">
+<dt class="sig sig-object py" id="src.data_pipeline">
+<span class="target" id="namespacesrc_1_1data__pipeline"></span><em class="property"><span class="pre">module</span> </em><span class="sig-name descname"><span class="pre">data_pipeline</span></span><a class="headerlink" href="#src.data_pipeline" title="Permalink to this definition"></a></dt>
+<dd><dl class="py class">
+<dt class="sig sig-object py" id="src.data_pipeline.feature_engineering">
+<span class="target" id="namespacesrc_1_1data__pipeline_1_1feature__engineering"></span><em class="property"><span class="pre">module</span> </em><span class="sig-name descname"><span class="pre">feature_engineering</span></span><a class="headerlink" href="#src.data_pipeline.feature_engineering" title="Permalink to this definition"></a></dt>
+<dd><dl class="py class">
+<dt class="sig sig-object py" id="src.data_pipeline.feature_engineering.word_embedding">
+<span class="target" id="namespacesrc_1_1data__pipeline_1_1feature__engineering_1_1word__embedding"></span><em class="property"><span class="pre">module</span> </em><span class="sig-name descname"><span class="pre">word_embedding</span></span><a class="headerlink" href="#src.data_pipeline.feature_engineering.word_embedding" title="Permalink to this definition"></a></dt>
+<dd><dl class="py class">
+<dt class="sig sig-object py" id="src.data_pipeline.feature_engineering.word_embedding.WordEmbedding">
+<span class="target" id="classsrc_1_1data__pipeline_1_1feature__engineering_1_1word__embedding_1_1_word_embedding"></span><em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WordEmbedding</span></span><a class="headerlink" href="#src.data_pipeline.feature_engineering.word_embedding.WordEmbedding" title="Permalink to this definition"></a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.data_pipeline.feature_engineering.word_embedding.WordEmbedding.__init__">
+<span class="target" id="classsrc_1_1data__pipeline_1_1feature__engineering_1_1word__embedding_1_1_word_embedding_1a44b7a555945d2452e04f0b98f05fddf9"></span><span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.data_pipeline.feature_engineering.word_embedding.WordEmbedding.__init__" title="Permalink to this definition"></a></dt>
+<dd><p><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Initialize</span> <span class="n">a</span> <span class="n">word</span> <span class="n">embedding</span> <span class="nb">object</span> <span class="n">using</span> <span class="n">the</span> <span class="n">BytePairLanguage</span> <span class="n">model</span><span class="o">.</span>
+
+<span class="n">Parameters</span>
+<span class="o">----------</span>
+<span class="n">lang</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">The</span> <span class="n">language</span> <span class="n">to</span> <span class="n">use</span> <span class="k">for</span> <span class="n">the</span> <span class="n">word</span> <span class="n">embedding</span> <span class="p">(</span><span class="n">default</span> <span class="ow">is</span> <span class="s2">&quot;es&quot;</span><span class="p">)</span>
+<span class="n">dimensions</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">The</span> <span class="n">number</span> <span class="n">of</span> <span class="n">dimensions</span> <span class="k">for</span> <span class="n">the</span> <span class="n">word</span> <span class="n">embedding</span> <span class="n">vectors</span> <span class="p">(</span><span class="n">default</span> <span class="ow">is</span> <span class="mi">25</span><span class="p">)</span>
+</pre></div>
+</div>
+ </p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.data_pipeline.feature_engineering.word_embedding.WordEmbedding.get_embedding">
+<span class="target" id="classsrc_1_1data__pipeline_1_1feature__engineering_1_1word__embedding_1_1_word_embedding_1a865b8e36085e230295aef810de43cad7"></span><span class="sig-name descname"><span class="pre">get_embedding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.data_pipeline.feature_engineering.word_embedding.WordEmbedding.get_embedding" title="Permalink to this definition"></a></dt>
+<dd><p><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Get</span> <span class="n">the</span> <span class="n">word</span> <span class="n">embedding</span> <span class="n">vector</span> <span class="k">for</span> <span class="n">a</span> <span class="n">given</span> <span class="n">text</span><span class="o">.</span>
+
+<span class="n">Parameters</span>
+<span class="o">----------</span>
+<span class="n">text</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">The</span> <span class="n">string</span> <span class="n">to</span> <span class="n">be</span> <span class="n">processed</span>
+
+<span class="n">Returns</span>
+<span class="o">----------</span>
+<span class="n">arr</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>
+    <span class="n">A</span> <span class="n">word</span> <span class="n">embedding</span> <span class="n">vector</span> <span class="k">for</span> <span class="n">the</span> <span class="n">given</span> <span class="n">text</span>
+
+<span class="n">Examples</span>
+<span class="o">--------</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">get_embedding</span><span class="p">(</span><span class="s2">&quot;This is a text&quot;</span><span class="p">,</span> <span class="s2">&quot;es&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+<span class="p">[</span> <span class="mf">0.06799883</span>  <span class="mf">0.17547965</span>  <span class="mf">0.47599664</span>  <span class="mf">0.16108984</span> <span class="o">-</span><span class="mf">0.1360625</span>  <span class="o">-</span><span class="mf">0.10632467</span>
+<span class="o">-</span><span class="mf">0.10654568</span> <span class="o">-</span><span class="mf">0.09805</span>    <span class="o">-</span><span class="mf">0.33004168</span> <span class="o">-</span><span class="mf">0.33528003</span> <span class="o">-</span><span class="mf">0.23304085</span>  <span class="mf">0.36661038</span>
+<span class="o">-</span><span class="mf">0.5797167</span>   <span class="mf">0.53252834</span>  <span class="mf">0.30276018</span> <span class="o">-</span><span class="mf">0.01584417</span>  <span class="mf">0.85087484</span>  <span class="mf">0.14121284</span>
+<span class="mf">0.74862367</span> <span class="o">-</span><span class="mf">0.33011952</span>  <span class="mf">0.015432</span>    <span class="mf">0.02694534</span>  <span class="mf">0.10118082</span> <span class="o">-</span><span class="mf">0.34017918</span>
+<span class="o">-</span><span class="mf">0.14560167</span><span class="p">]</span>
+</pre></div>
+</div>
+ </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.data_pipeline.feature_engineering.word_embedding.WordEmbedding.bpl">
+<span class="target" id="classsrc_1_1data__pipeline_1_1feature__engineering_1_1word__embedding_1_1_word_embedding_1a48891e9d474048982d9a46c20f24a8bb"></span><span class="sig-name descname"><span class="pre">bpl</span></span><a class="headerlink" href="#src.data_pipeline.feature_engineering.word_embedding.WordEmbedding.bpl" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="parser_base.html" class="btn btn-neutral float-left" title="Parser Base" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, João Victor Matos.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

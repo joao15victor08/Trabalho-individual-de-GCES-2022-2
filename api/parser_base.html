@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parser Base &mdash; trabalho_individual_de_gces_2022_2  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Word Embedding" href="word_embedding.html" />
+    <link rel="prev" title="Model Parser" href="model_parser.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> trabalho_individual_de_gces_2022_2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentação Trabalho individual GCES 2022- 2</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Funcs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="YAML_parser.html">YAML Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concatenate_columns.html">Concatenate Columns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="const.html">Const</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feature_engineering_parser.html">Feature Engineering Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="key_smash.html">Key Smash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">Main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_parser.html">Model Parser</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Parser Base</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#src"><code class="docutils literal notranslate"><span class="pre">src</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#src.parser"><code class="docutils literal notranslate"><span class="pre">src.parser</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="word_embedding.html">Word Embedding</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">trabalho_individual_de_gces_2022_2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Funcs</a></li>
+      <li class="breadcrumb-item active">Parser Base</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/parser_base.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="parser-base">
+<span id="api-parser"></span><h1>Parser Base<a class="headerlink" href="#parser-base" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="src">
+<span class="target" id="namespacesrc"></span><em class="property"><span class="pre">module</span> </em><span class="sig-name descname"><span class="pre">src</span></span><a class="headerlink" href="#src" title="Permalink to this definition"></a></dt>
+<dd><dl class="py class">
+<dt class="sig sig-object py" id="src.parser">
+<span class="target" id="namespacesrc_1_1parser"></span><em class="property"><span class="pre">module</span> </em><span class="sig-name descname"><span class="pre">parser</span></span><a class="headerlink" href="#src.parser" title="Permalink to this definition"></a></dt>
+<dd><dl class="py class">
+<dt class="sig sig-object py" id="src.parser.parser_base">
+<span class="target" id="namespacesrc_1_1parser_1_1parser__base"></span><em class="property"><span class="pre">module</span> </em><span class="sig-name descname"><span class="pre">parser_base</span></span><a class="headerlink" href="#src.parser.parser_base" title="Permalink to this definition"></a></dt>
+<dd><dl class="py class">
+<dt class="sig sig-object py" id="src.parser.parser_base.ParserBase">
+<span class="target" id="classsrc_1_1parser_1_1parser__base_1_1_parser_base"></span><em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ParserBase</span></span><a class="headerlink" href="#src.parser.parser_base.ParserBase" title="Permalink to this definition"></a></dt>
+<dd><p>Subclassed by <a class="reference internal" href="YAML_parser.html#classsrc_1_1parser_1_1_y_a_m_l__parser_1_1_y_a_m_l_parser"><span class="std std-ref">YAMLParser</span></a>, <a class="reference internal" href="feature_engineering_parser.html#classsrc_1_1parser_1_1feature__engineering__parser_1_1_feature_engineering_parser"><span class="std std-ref">FeatureEngineeringParser</span></a>, <a class="reference internal" href="model_parser.html#classsrc_1_1parser_1_1model__parser_1_1_model_parser"><span class="std std-ref">ModelParser</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.parser.parser_base.ParserBase.__init__">
+<span class="target" id="classsrc_1_1parser_1_1parser__base_1_1_parser_base_1ac0aac6776633e4d561dd4ed0f61f5d56"></span><span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filepath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'src/yamls/config.yaml'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.parser.parser_base.ParserBase.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.parser.parser_base.ParserBase.filepath">
+<span class="target" id="classsrc_1_1parser_1_1parser__base_1_1_parser_base_1a03d872533f5f6255a26b393857fd90e9"></span><span class="sig-name descname"><span class="pre">filepath</span></span><a class="headerlink" href="#src.parser.parser_base.ParserBase.filepath" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.parser.parser_base.ParserBase._get">
+<span class="target" id="classsrc_1_1parser_1_1parser__base_1_1_parser_base_1aa2b6edf217d0444fce5a7af07f7f3b89"></span><span class="sig-name descname"><span class="pre">_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dict</span> <span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.parser.parser_base.ParserBase._get" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.parser.parser_base.ParserBase._try_get">
+<span class="target" id="classsrc_1_1parser_1_1parser__base_1_1_parser_base_1aa530d24c9649a57d117160a575c57d1c"></span><span class="sig-name descname"><span class="pre">_try_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dict</span> <span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_msg=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.parser.parser_base.ParserBase._try_get" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="model_parser.html" class="btn btn-neutral float-left" title="Model Parser" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="word_embedding.html" class="btn btn-neutral float-right" title="Word Embedding" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, João Victor Matos.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
