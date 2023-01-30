@@ -8,10 +8,7 @@ on:
 
 jobs:
     build-and-deploy:
-        matrix:
-            python-version: [3.8]
-            os: [macos-latest]
-        runs-on: ${{ matrix.os }}
+        runs-on: macos-latest
         steps:
             - name: Requirements
               run: brew install doxygen
